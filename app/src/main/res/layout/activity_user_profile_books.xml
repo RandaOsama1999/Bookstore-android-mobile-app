@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Books.UserProfileBooks">
+        <ImageView
+            android:id="@+id/bookcover"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:src="@drawable/books"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/topsellers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookcover"
+            android:layout_marginLeft="5dp"
+            android:text="Top Sellers"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topsellersrecylcerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topsellers"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <Button
+            android:id="@+id/moretopsellers"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bookcover"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="MORE"
+            android:textColor="@color/whitesidebar" />
+        <View
+            android:id="@+id/v1"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/topsellersrecylcerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_marginLeft="5dp"
+            android:text="Action and Adventure"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/moreaction"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v1"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actionrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <View
+            android:id="@+id/v2"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/actionrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/classic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v2"
+            android:layout_marginLeft="5dp"
+            android:text="Classic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/moreclassic"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v2"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classicrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/classic"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+
+        <View
+            android:id="@+id/v3"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/classicrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/comic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v3"
+            android:layout_marginLeft="5dp"
+            android:text="Comic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morecomic"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v3"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comicrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comic"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <View
+            android:id="@+id/v4"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/comicrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/cookbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v4"
+            android:layout_marginLeft="5dp"
+            android:text="Cook"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morecookbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v4"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cookbooksrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cookbooks"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <View
+            android:id="@+id/v5"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cookbooksrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/drama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v5"
+            android:layout_marginLeft="5dp"
+            android:text="Drama"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/moredrama"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v5"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dramarecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drama"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <View
+            android:id="@+id/v6"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/dramarecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/fairytale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v6"
+            android:layout_marginLeft="5dp"
+            android:text="Fairy Tales"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morefairytale"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v6"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fairytalerecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fairytale"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <View
+            android:id="@+id/v7"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/fairytalerecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/fantasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v7"
+            android:layout_marginLeft="5dp"
+            android:text="Fantasy"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/morefantasy"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v7"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fantasyrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fantasy"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+
+        <View
+            android:id="@+id/v8"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/fantasyrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/horror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v8"
+            android:layout_marginLeft="5dp"
+            android:text="Horror"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morehorror"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v8"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horrorrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horror"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <View
+            android:id="@+id/v9"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/horrorrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/humor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v9"
+            android:layout_marginLeft="5dp"
+            android:text="Humor"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morehumor"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v9"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/humorrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humor"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <View
+            android:id="@+id/v10"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/humorrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/kids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v10"
+            android:layout_marginLeft="5dp"
+            android:text="Kids Books"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morekidsbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v10"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/kidsbooksrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kids"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <View
+            android:id="@+id/v11"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/kidsbooksrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/mystery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v11"
+            android:layout_marginLeft="5dp"
+            android:text="Mystery"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/moremystery"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v11"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mysteryrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mystery"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <View
+            android:id="@+id/v12"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mysteryrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/poetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v12"
+            android:layout_marginLeft="5dp"
+            android:text="Poetry"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/morepoetry"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v12"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/poetryrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poetry"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <View
+            android:id="@+id/v13"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/poetryrecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/romance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v13"
+            android:layout_marginLeft="5dp"
+            android:text="Romance"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/moreromance"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v13"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/romancerecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/romance"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <View
+            android:id="@+id/v14"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/romancerecyclerview"
+            android:background="@color/brownseparator"
+            />
+        <TextView
+            android:id="@+id/sciencefiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v14"
+            android:layout_marginLeft="5dp"
+            android:text="Sci-Fi"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/moresciencefiction"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="MORE"
+            android:layout_below="@+id/v14"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/whitesidebar"
+            android:background="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sciencefictionrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sciencefiction"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+

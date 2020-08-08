@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Books.bookActivity"
+    android:background="#fcfcfc">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="180dp"
+                android:background="#2d2d2d"
+                android:id="@+id/bookthumbnail"
+                android:scaleType="centerCrop"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Title"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txtauthor"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:background="#edecec"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:textSize="18sp"
+                android:textColor="#ff0000"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <RatingBar
+                android:id="@+id/rating"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:background="#a20000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rate"
+                android:text="Rate Book"
+
+                />
+            <TextView
+                android:id="@+id/txtyear"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txtDesc"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:gravity="center"
+
+                android:id="@+id/quantityLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/priceLinearLayout"
+                android:paddingBottom="@dimen/default_gap"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/default_gap">
+
+                <TextView
+                    android:id="@+id/quantityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="Quantity"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/decrement_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:textSize="18sp"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/increment_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:textSize="22sp"
+                        android:text="+" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantityTotal"
+                android:paddingTop="@dimen/default_gap"
+                android:layout_below="@+id/quantityLinearLayout"
+                android:paddingBottom="@dimen/default_gap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="Total Price"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/cost_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cart_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/quantityTotal"
+                android:layout_gravity="center"
+                android:background="#a20000"
+                android:textColor="#FFFFFF"
+                android:text="Add to Cart" />
+
+
+            <TextView
+                android:id="@+id/audiencerating"
+                android:layout_marginTop="40dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Audience Ratings"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/separateline"
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:background="#111"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviewsrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

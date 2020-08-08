@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:title="Show All Users" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:title="Update User info" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:title="Delete User" />
+        <item
+            android:id="@+id/nav_fourth_fragment"
+            android:title="Show All Books" />
+        <item
+            android:id="@+id/nav_fifth_fragment"
+            android:title="Update Books info" />
+        <item
+            android:id="@+id/nav_sixth_fragment"
+            android:title="Delete Books" />
+        <item
+            android:id="@+id/nav_seventh_fragment"
+            android:title="Add Book" />
+        <item
+            android:id="@+id/nav_eigthtth"
+            android:title="Audience Ratings" />
+        <item
+            android:id="@+id/nav_last_fragment"
+            android:title="Logout" />
+    </group>
+</menu>

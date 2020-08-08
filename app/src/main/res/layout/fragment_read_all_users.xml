@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    tools:context=".User.ReadAllUsers">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TableLayout
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:stretchColumns="5">
+    <TableRow  android:padding="5dp" android:background="#a20000">
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="name" />
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Gender"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Mobile"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Email"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+
+</TableLayout>
+    </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ratings.AdminRates">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/audi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Audience Ratings"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/separateline"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="#111"
+            android:layout_marginBottom="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/adminraterecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</FrameLayout>

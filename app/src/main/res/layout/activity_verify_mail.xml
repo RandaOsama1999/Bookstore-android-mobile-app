@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration.VerifyMail">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Thank your for signing up in our application, please verify your email to start using our application. Click here to open your gmail app or check your mailbox manually."
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/mail"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/text"
+        android:layout_width="300dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:text="Check gmail app"
+        android:background="#a20000"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mail"
+        android:layout_below="@+id/mail"
+        android:text="Already have an account? "
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/account"
+        android:layout_below="@+id/mail"
+        android:text=" Login now"
+        android:textColor="#a20000" />
+
+</RelativeLayout>

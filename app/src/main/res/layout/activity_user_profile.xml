@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration.UserProfile">
+    <TextView
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Your Profile"
+        android:textStyle="bold"
+        />
+    <ScrollView
+        android:layout_below="@+id/text"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/person"
+                android:hint="First Name" />
+            <EditText
+                android:id="@+id/lname"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/fname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/person"
+                android:hint="Last Name" />
+            <EditText
+                android:id="@+id/dateofbirth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_centerInParent="true"
+                android:drawableStart="@drawable/dob"
+                android:layout_below="@+id/lname"
+                android:hint="Date of bitrth"
+                />
+            <EditText
+                android:id="@+id/number"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/dateofbirth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mobile"
+                android:inputType="number"
+                android:hint="Mobile Number" />
+            <Button
+                android:id="@+id/save"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/number"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                />
+            <!--<Button
+                android:id="@+id/next"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/save"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                />
+            <Button
+                android:id="@+id/map"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/next"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Show nearby bookstores"
+                />
+            <Button
+                android:id="@+id/logout"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/save"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                />-->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

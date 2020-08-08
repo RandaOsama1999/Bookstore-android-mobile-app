@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context=".Books.UpdateBook">
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="Update Book"
+            android:textColor="#a20000"/>
+        <EditText
+            android:layout_below="@+id/text"
+            android:layout_marginTop="20dp"
+            android:editable="true"
+            android:id="@+id/titlesearch"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Book Title" />
+        <EditText
+            android:editable="true"
+            android:id="@+id/authorsearch"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_below="@+id/titlesearch"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Book Author" />
+        <Button
+            android:id="@+id/search"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/authorsearch"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Search Book"
+            />
+        <ImageView
+            android:editable="false"
+            android:id="@+id/img"
+            android:layout_width="110dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/search"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="60dp"
+            />
+        <Button
+            android:editable="false"
+            android:id="@+id/upload"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/img"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Upload book cover"
+            />
+        <EditText
+            android:editable="false"
+
+            android:layout_marginTop="20dp"
+            android:id="@+id/booktitle"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/upload"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Title" />
+        <EditText
+            android:editable="false"
+
+            android:id="@+id/bookauthor"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/booktitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Author" />
+        <EditText
+            android:editable="false"
+
+            android:id="@+id/year"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/bookauthor"
+            android:layout_width="300dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="Year published" />
+
+        <EditText
+            android:editable="false"
+
+            android:id="@+id/price"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/year"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Price"
+            />
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/price"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Quantity"
+            />
+        <Spinner
+            android:editable="false"
+
+            android:id="@+id/category"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/quantity"
+            android:layout_width="300dp"
+            android:entries="@array/bookCategories"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Category" />
+        <EditText
+            android:editable="false"
+
+            android:id="@+id/rating"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/category"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="GoodReads Rating"
+            />
+        <EditText
+            android:editable="false"
+
+            android:id="@+id/desc"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/rating"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:minLines="6"
+            android:gravity="top|left"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:hint="Dexcription" />
+        <Button
+            android:clickable="false"
+            android:id="@+id/add"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/desc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Update Book"
+            />
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

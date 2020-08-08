@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context=".User.UpdateUser">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="Update User"
+                android:textColor="#a20000"/>
+            <EditText
+                android:layout_below="@+id/text"
+                android:layout_marginTop="20dp"
+                android:id="@+id/email"
+                android:editable="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/email"
+                android:hint="Email" />
+            <Button
+                android:id="@+id/find"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Find User"
+                />
+            <EditText
+                android:editable="false"
+                android:id="@+id/fname"
+                android:layout_below="@+id/find"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/person"
+                android:hint="First Name" />
+            <EditText
+                android:editable="false"
+
+                android:id="@+id/lname"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/fname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/person"
+                android:hint="Last Name" />
+            <EditText
+                android:editable="false"
+
+                android:id="@+id/dateofbirth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_centerInParent="true"
+                android:drawableStart="@drawable/dob"
+                android:layout_below="@+id/lname"
+                android:hint="Date of bitrth"
+                />
+            <EditText
+                android:editable="false"
+
+                android:id="@+id/number"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/dateofbirth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mobile"
+                android:inputType="number"
+                android:hint="Mobile Number" />
+            <Button
+                android:clickable="false"
+                android:id="@+id/save"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/number"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

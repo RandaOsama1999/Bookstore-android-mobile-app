@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/cart"
+        android:title="Cart"
+        app:actionLayout="@layout/activity_cart_notification"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"
+        app:showAsAction="always" />
+</menu>

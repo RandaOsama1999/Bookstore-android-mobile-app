@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCart.paymentmethod"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:src="@drawable/visa"
+            android:layout_marginTop="30dp"
+            android:id="@+id/visa"
+            ></ImageView>
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="68dp"
+            android:src="@drawable/mastercard"
+            android:layout_marginTop="30dp"
+            android:id="@+id/mastercard"
+            ></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Holder"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="60"
+        android:gravity="center"
+        android:hint="Enter Card Owner Name"
+        android:inputType="text"
+        android:id="@+id/cardholder"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        />
+    <TextView
+        android:id="@+id/fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Fill this area"
+        android:textColor="@color/quantum_googred"
+        android:visibility="invisible"
+
+        />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardnumber"
+        android:layout_marginTop="10dp"
+        android:hint="XXXX XXXX XXXX XXXX"
+        android:maxLength="19"
+        android:gravity="center"
+        android:inputType="number"
+        android:digits="1234567890 "
+
+
+
+
+        ></EditText>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We only accept Visa card numbers or Mastercard"
+        android:textColor="@color/quantum_googred"
+        android:visibility="invisible"
+        android:id="@+id/warning"
+
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:inputType="date"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:hint="Exp Date"
+            android:focusable="false"
+            android:id="@+id/etexpdate"
+
+            />
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:id="@+id/etcvv"
+            android:maxLength="3"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid Exp Date"
+            android:textColor="@color/quantum_googred"
+            android:id="@+id/expdat"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid CVV"
+            android:textColor="@color/quantum_googred"
+            android:id="@+id/cvv"
+            android:visibility="invisible"
+            android:layout_marginLeft="150dp"
+
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#0AA30F"
+        android:textColor="@color/whitesidebar"
+        android:text="Buy"
+
+        android:textSize="20dp"
+        android:onClick="clicked"
+        android:id="@+id/click"
+
+        />
+
+</LinearLayout>

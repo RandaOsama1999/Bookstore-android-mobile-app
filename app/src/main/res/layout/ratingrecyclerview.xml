@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abo ahmed"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+    />
+        <Button
+            android:id="@+id/approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:background="#32ae32"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:layout_marginLeft="5dp"
+            android:background="#a20000"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="large book name here for example"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        />
+    <RatingBar
+
+        android:id="@+id/ratingarea"
+        android:numStars="5"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/commentarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        />
+    <View
+        android:id="@+id/separateline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#111"/>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration.SignUp">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        />
+    <ScrollView
+        android:layout_below="@+id/text"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/person"
+        android:hint="First Name" />
+    <EditText
+        android:id="@+id/lname"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/fname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/person"
+
+        android:hint="Last Name" />
+    <EditText
+        android:id="@+id/dateofbirth"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/lname"
+        android:drawableStart="@drawable/dob"
+        android:hint="Date of bitrth"
+        />
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:entries = "@array/gender"
+        android:layout_below="@+id/dateofbirth"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Female"
+            />
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Male"
+            />
+        </RadioGroup>
+    <EditText
+        android:id="@+id/number"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/gender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:drawableStart="@drawable/mobile"
+        android:hint="Mobile Number" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/email"
+        android:hint="Email" />
+    <EditText
+        android:id="@+id/pass"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:hint="Password" />
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        />
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signupbtn"
+        android:layout_below="@+id/signupbtn"
+        android:text="Already have an account? "
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/account"
+        android:layout_below="@+id/signupbtn"
+        android:text=" Login now"
+        android:textColor="#a20000" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

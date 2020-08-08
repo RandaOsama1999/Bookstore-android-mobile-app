@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a20000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whitesidebar">#FFFFFF</color>
+    <color name="bookcategory">#2B5AEC</color>
+    <color name="brownseparator">#6F1A07</color>
+    <color name="darkmode">#6F000000</color>
+</resources>
